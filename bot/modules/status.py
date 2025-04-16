@@ -32,9 +32,9 @@ import asyncio
 
 @new_task
 async def mirror_status(_, message):
-    sticker_message = await message.reply_sticker("CAACAgUAAxkBAAENCARngoP8CWIZfnE2CEkG4efG16s60wACyA0AAo8-EFVrHWO9gUOmmx4E")
-    await asyncio.sleep(2)
-    await sticker_message.delete()
+    #sticker_message = await message.reply_sticker("CAACAgUAAxkBAAENCARngoP8CWIZfnE2CEkG4efG16s60wACyA0AAo8-EFVrHWO9gUOmmx4E")
+    #await asyncio.sleep(2)
+    #await sticker_message.delete()
     async with download_dict_lock:
         count = len(download_dict)
 

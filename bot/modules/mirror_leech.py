@@ -67,10 +67,10 @@ import asyncio
 async def _mirror_leech(
     client, message, is_qbit=False, is_leech=False, same_dir=None, bulk=[]
 ):
-    sticker_message = await message.reply_sticker("CAACAgUAAxkBAAENB_BngoIF3-4SJHhZ2_1cCk4RwmgwPQACmwADyJRkFJqpbMel02C3HgQ")
-    await send_react(message)
-    await asyncio.sleep(2)
-    await sticker_message.delete()
+    #sticker_message = await message.reply_sticker("CAACAgUAAxkBAAENB_BngoIF3-4SJHhZ2_1cCk4RwmgwPQACmwADyJRkFJqpbMel02C3HgQ")
+    #await send_react(message)
+    #await asyncio.sleep(2)
+    #await sticker_message.delete()
     user = message.from_user or message.sender_chat
     user_id = user.id
     user_dict = user_data.get(user_id, {})

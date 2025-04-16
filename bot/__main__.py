@@ -156,9 +156,9 @@ async def stats(_, message):
 
 @new_thread
 async def start(client, message):
-    sticker_message = await message.reply_sticker("CAACAgIAAxkBAAEarGtmq8a_Hy6_Pk8IzUHRO8i1dvwDyAACFh4AAuzxOUkNYHq7o3u0ODUE")
-    await asyncio.sleep(2)
-    await sticker_message.delete()
+    #sticker_message = await message.reply_sticker("CAACAgIAAxkBAAEarGtmq8a_Hy6_Pk8IzUHRO8i1dvwDyAACFh4AAuzxOUkNYHq7o3u0ODUE")
+    #await asyncio.sleep(2)
+    #await sticker_message.delete()
     if len(message.command) > 1 and message.command[1] == "private":
         await delete_message(message)
     elif len(message.command) > 1 and len(message.command[1]) == 36:
@@ -206,9 +206,9 @@ async def start(client, message):
 
 
 async def restart(_, message):
-    sticker_message = await message.reply_sticker("CAACAgUAAxkBAAEXrSRlbwYlArKGw0lVGUGHquKMqbu3fQACLggAAmCIwVXm28BgWp1jmzME")
-    await asyncio.sleep(2)
-    await sticker_message.delete()
+    #sticker_message = await message.reply_sticker("CAACAgUAAxkBAAEXrSRlbwYlArKGw0lVGUGHquKMqbu3fQACLggAAmCIwVXm28BgWp1jmzME")
+    #await asyncio.sleep(2)
+    #await sticker_message.delete()
     restart_message = await send_message(message, "Restarting...")
     if scheduler.running:
         scheduler.shutdown(wait=False)

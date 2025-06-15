@@ -123,7 +123,7 @@ async def stats(_, message):
         '👤 Usᴇʀ ᴛᴀsᴋ': config_dict.get('USER_MAX_TASKS', '∞')
     }
     system_info = (
-        f'<b><a href="tg://settings">Pᴏᴡᴇʀᴇᴅ ʙʏ ꜰ1 ᴍɪʀʀᴏʀ ♥️</a></b>\n\n'\
+        f'<b><a href="tg://settings">Pᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴘᴀʀᴋʙʀᴏ 🌟</a></b>\n\n'\
         f'<b>Sʏsᴛᴇᴍ sᴛᴀᴛs 🚀♥️</b>\n\n'\
         f'🤖 Bᴏᴛ ᴜᴘᴛɪᴍᴇ : {current_time}\n'\
         f'🖥️ Sʏs ᴜᴘᴛɪᴍᴇ : {os_uptime}\n'\
